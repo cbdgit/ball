@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="5dip"
+
+        android:minHeight="50dip">
+
+        <ImageView
+            android:id="@+id/timer_delete_Iv"
+            android:layout_width="40dip"
+            android:layout_height="45dip"
+            android:layout_marginLeft="1dip"
+
+            android:src="@drawable/timer_delete_icon" />
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/timer_delete_Iv"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@+id/timer_delete_Iv"
+            android:gravity="center"
+            android:text="起床"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/timer_openTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tvTitle"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="1dip"
+            android:layout_toRightOf="@+id/tvTitle"
+            android:text="定时开:7:00"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/timer_closeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvTitle"
+            android:layout_below="@+id/timer_openTv"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="1dip"
+            android:layout_toRightOf="@+id/tvTitle"
+            android:text="定时关:8:00"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/timer_setIv"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_marginTop="4dip"
+            android:layout_alignTop="@+id/timer_delete_Iv"
+            android:layout_toLeftOf="@+id/timer_open_Iv"
+            android:layout_marginRight="20dip"
+
+            android:gravity="center"
+            android:src="@drawable/link_off" />
+
+        <ImageView
+            android:id="@+id/timer_open_Iv"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/timer_delete_Iv"
+            android:layout_marginRight="5dip"
+
+            android:gravity="center"
+            android:src="@drawable/close_icon" />
+
+
+        <TextView
+            android:id="@+id/groupTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/tvTitle"
+            android:layout_marginBottom="2dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="1dip"
+            android:layout_toRightOf="@+id/timer_delete_Iv"
+            android:text="分组一,分组二,分组三"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
+

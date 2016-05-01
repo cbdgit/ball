@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">柏锐光电</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="tab1_text">Chats</string>
+    <string name="tab2_text">Contacts</string>
+    <string name="tab3_text">Discover</string>
+    <string name="tab4_text">Me</string>
+
+    <!-- Alldevides delegate -->
+    <string name="title_select">选择</string>
+    <string name="title_setting">设置</string>
+
+    <string name="remove_devides">移除所有设备</string>
+    <string name="rename">重命名</string>
+    <string name="delete">删除</string>
+    <string name="adjust_group">调整分组</string>
+    <string name="delete_group">删除分组</string>
+    <string name="button_groupmanage">添加分组</string>
+
+    <string name="tab_color">彩色</string>
+    <string name="tab_white">白光</string>
+
+    <string name="dark">暗</string>
+    <string name="light">亮</string>
+    <string name="tag_no_color">没有想要的颜色?</string>
+
+    <string name="retn">返回</string>
+    <string name="mode">模式</string>
+    <string name="color_circle">色环</string>
+    <string name="add_mode">添加模式</string>
+    <string name="mode_jump">跳变</string>
+    <string name="mode_fade">渐变</string>
+    <string name="mode_shade">频闪</string>
+    <string name="mode_save">保存</string>
+
+    <string name="light_degree">亮度</string>
+
+    <!-- Context delegate -->
+    <string name="title_delete">删除</string>
+    <string name="title_cancel">取消</string>
+    <string name="title_new_create">新建</string>
+    <string name="toast">长按以上图标修改情景属性</string>
+
+    <string name="popwindow_title">自定义情景</string>
+    <string name="popwindow_hint_one">请输入情景的名称：</string>
+    <string name="popwindow_hint_two">为你的情景配上一张漂亮的图片：</string>
+    <string name="popwindow_hint_thr">（可选项）</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="status">状态：</string>
+    <string name="task">任务：</string>
+    <string name="timer_tag">点击查看定时任务</string>
+    <string name="pipei">匹配状况：</string>
+    <string name="change_context">修改情景属性：</string>
+
+    <string name="now_light">当前亮度</string>
+    <string name="now_warm">暖光</string>
+    <string name="now_white">白光</string>
+
+
+    <!-- Timer delegate -->
+
+    <!-- Music delegate -->
+    <string name="popular">流行</string>
+    <string name="gentle">柔和</string>
+    <string name="rock">摇滚</string>
+
+    <string name="slow">慢</string>
+    <string name="quik">快</string>
+
+    <string name="color_slt">色彩</string>
+    <string name="music_lib">乐库</string>
+
+    <!-- GroupManage -->
+    <string name="title_add_group">添加分组</string>
+    <string name="title_close_group">关闭</string>
+    <string name="title_activity_add_timer">AddTimerActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+
+
+</resources>

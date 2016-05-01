@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+
+        >
+        <ImageView
+            android:id="@+id/item_select"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:id="@+id/item_type"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        >
+        <ImageView
+            android:id="@+id/item_link"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="2dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:id="@+id/item_onoff"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="2dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:id="@+id/item_more"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="2dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

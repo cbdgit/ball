@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include android:id="@+id/titlebar" layout="@layout/titlebar" />
+
+    <LinearLayout
+        android:id="@+id/layout_wheelview"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlebar"
+        >
+        <com.bosong.ball_light.view.impl.WheelView
+            android:id="@+id/wheelview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_add_mode"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_wheelview"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+        <Button
+            android:id="@+id/add_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_mode"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_seekbar_speed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_add_mode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+        <TextView
+            android:id="@+id/text_slow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/slow"
+            android:textColor="@android:color/black"
+            />
+        <SeekBar
+            android:id="@+id/speed_progress"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:maxHeight="2dip"
+            android:progressDrawable="@drawable/bg_bar"
+            android:thumb="@drawable/thumb_bar"
+            />
+        <TextView
+            android:id="@+id/text_quik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quik"
+            android:textColor="@android:color/black"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_seekbar_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_seekbar_speed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+        <TextView
+            android:id="@+id/text_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dark"
+            android:textColor="@android:color/black"
+            />
+        <SeekBar
+            android:id="@+id/light_progress"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:maxHeight="2dip"
+            android:progressDrawable="@drawable/bg_bar"
+            android:thumb="@drawable/thumb_bar"
+            />
+        <TextView
+            android:id="@+id/text_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/light"
+            android:textColor="@android:color/black"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

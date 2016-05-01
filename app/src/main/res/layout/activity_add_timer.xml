@@ -1,0 +1,289 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.bosong.ball_light.presenter.activity.AddTimerActivity">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/titlebar" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlebar"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/genderGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/timeronButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:checked="true"
+                android:text="定时开"
+
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/timeroffButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:button="@null"
+                android:text="定时关"
+
+                android:textSize="20sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lll"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="定时开:"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="定时关:"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/editText1"
+            android:textCursorDrawable="@null"
+            android:background="@null"
+            android:text=""
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/llll"
+        android:layout_marginTop="5dip"
+        android:background="@color/bgColorD3" />
+
+    <LinearLayout
+        android:id="@+id/lllll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llll"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:text="名称"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/nameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            android:background="@null"
+            android:textCursorDrawable="@null"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/lllll"
+        android:layout_marginTop="5dip"
+        android:background="@color/bgColorD3" />
+
+    <RelativeLayout
+        android:id="@+id/repeatRl"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/view1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/repeatTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dp"
+            android:text="重复"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/repeatContentTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/repeatTv"
+            android:text="永不重复"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="27dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/ico_next" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/repeatRl"
+        android:layout_marginTop="5dip"
+        android:background="@color/bgColorD3" />
+
+    <RelativeLayout
+        android:id="@+id/qingjinRl"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/view2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/qinjinTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dp"
+            android:text="情景"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/qinjinContentTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/qinjinTv"
+            android:text="起床"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="27dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/ico_next" />
+    </RelativeLayout>
+
+
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/qingjinRl"
+        android:layout_marginTop="5dip"
+        android:background="@color/bgColorD3" />
+
+    <RelativeLayout
+        android:id="@+id/deviceRl"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/view3"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/deviceTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dp"
+            android:text="设备"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/groupTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/deviceTv"
+            android:text="分组一,分组二"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="27dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/ico_next" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/deviceRl"
+        android:layout_marginTop="5dip"
+        android:background="@color/bgColorD3" />
+
+</RelativeLayout>

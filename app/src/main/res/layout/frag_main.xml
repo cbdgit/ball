@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titlebar" />
+    <!-- 上部TAB栏 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="43dip"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip" >
+
+             <TextView
+                android:id="@+id/collect_title1"
+                style="@style/main_title" />
+
+            <TextView
+                android:id="@+id/collect_title2"
+                style="@style/main_title" />
+
+            <TextView
+                android:id="@+id/collect_title3"
+                style="@style/main_title" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/collect_cursor"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_collect_line" />
+    </LinearLayout>
+
+    <!-- 中间的内容 -->
+
+    <com.bosong.ball_light.widget.JSViewPager
+        android:id="@+id/main_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never" />
+
+</LinearLayout>

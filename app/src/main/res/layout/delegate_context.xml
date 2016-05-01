@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/titlebar" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_below="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <GridView
+            android:id="@+id/gridview_context"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/toast"
+            android:horizontalSpacing="6dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:verticalSpacing="6dp"
+            />
+
+        <TextView
+            android:id="@+id/toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dip"
+            android:text="@string/toast"
+            android:textColor="#666666" />
+    </RelativeLayout>
+</RelativeLayout>
